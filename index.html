@@ -1,44 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paugnat</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-  </head>
-  <body class="bg-black">
-    <nav class="navbar navbar-expand-lg bg-warning navbar-dark ">
-      <div class="container">
-      <a href="#" class="navbar-brand fw-bold text-black" onclick="window.location.reload(); alert('HELLO PRACTICE KO BOOTSTRAP'); return false;">Paugnat</a>
-
-      <div class="collapse navbar-collapse ">
-        <ul class="navbar-nav ms-auto text-black">
-          <li class="nav-item">
-            <a href="#home" class="nav-link text-dark fw-bold">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="sports.html" class="nav-link text-dark fw-bold">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a href="#department" class="nav-link text-dark fw-bold">Department</a>
-          </li>
-          <li class="nav-item">
-            <a href="#events" class="nav-link text-dark fw-bold">Events</a>
-          </li>
-          
-        </ul>
-    </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paugnat | Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg bg-warning navbar-light sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold text-black">Paugnat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-dark fw-bold">Home</a></li>
+                    <li class="nav-item"><a href="sports.html" class="nav-link text-dark fw-bold">Sports</a></li>
+                    <li class="nav-item"><a href="#events" class="nav-link text-dark fw-bold">Events</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-     
+
+    <section id="home" class="min-vh-100 d-flex align-items-center justify-content-center">
+        <h1 class="text-warning display-1 fw-bold">WELCOME TRAILBLAZERS</h1>
     </section>
 
-   
-
-
-
-
+    <section id="events" class="py-5 bg-black border-top border-secondary">
+        <div class="container">
+            <h2 class="text-white mb-5 fw-bold">Upcoming Events</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-warning h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Basketball Finals</h5>
+                            <p class="card-text text-secondary">The ultimate showdown between CIT and CEA departments.</p>
+                            <div class="mt-auto">
+                                <p class="small mb-2">📍 USTP Gymnasium</p>
+                                <a href="#" class="btn btn-warning btn-sm w-100 fw-bold">View Schedule</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-warning h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">E-Sports Tournament</h5>
+                            <p class="card-text text-secondary">Mobile Legends and Valorant qualifiers start this weekend.</p>
+                            <div class="mt-auto">
+                                <p class="small mb-2">📍 ICT Lab 1</p>
+                                <a href="#" class="btn btn-warning btn-sm w-100 fw-bold">Register Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-warning h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Mr. & Ms. Paugnat</h5>
+                            <p class="card-text text-secondary">The search for the next ambassadors of sportsmanship.</p>
+                            <div class="mt-auto">
+                                <p class="small mb-2">📍 University Auditorium</p>
+                                <a href="#" class="btn btn-warning btn-sm w-100 fw-bold">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  </body>
+</body>
 </html>

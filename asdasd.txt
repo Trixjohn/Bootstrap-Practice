@@ -1,0 +1,54 @@
+============================================================
+           BOOTSTRAP CHEAT SHEET (PAUGNAT PROJECT)
+============================================================
+
+1. THE HIERARCHY (The "Nesting" Rule)
+------------------------------------------------------------
+[SECTION]        -> Use for background colors & IDs
+  [CONTAINER]    -> Centers everything (keeps it neat)
+    [ROW]        -> The horizontal wrapper
+      [COLUMN]   -> The width (must add up to 12)
+        [CONTENT]-> Your Cards, Text, or Images
+
+2. RESPONSIVE GRID (The 12-Column Rule)
+------------------------------------------------------------
+Bootstrap divides the screen into 12 parts.
+* col-12 : Full width (1/1)
+* col-6  : Half width (1/2)
+* col-4  : One-third width (1/3)
+* col-3  : One-fourth width (1/4)
+
+BREAKPOINTS:
+* col-      : Mobile (Phone)
+* col-md-   : Tablet / Medium Laptop
+* col-lg-   : Desktop / Large Screen
+
+3. COMMON UTILITY CLASSES
+------------------------------------------------------------
+SPACING:
+* mt-4 : Margin Top (space outside)
+* mb-4 : Margin Bottom
+* py-5 : Padding Vertical (space inside)
+
+COLORS:
+* bg-warning : Yellow (Paugnat Theme)
+* bg-black   : Black
+* text-white : White text
+* text-dark  : Black text
+
+DISPLAY:
+* d-flex              : Turn on Flexbox
+* align-items-center  : Center vertically
+* justify-content-mid : Center horizontally
+* min-vh-100          : Full screen height
+
+4. QUICK CARD TEMPLATE
+------------------------------------------------------------
+<div class="card bg-dark text-white border-warning">
+  <div class="card-body">
+    <h5 class="card-title">Title Here</h5>
+    <p class="card-text">Description here.</p>
+  </div>
+</div>
+
+============================================================
